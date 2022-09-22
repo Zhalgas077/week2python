@@ -1,0 +1,136 @@
+Practice work 6
+ Task 1 (1)
+a=[]
+n=int(input())
+for i in range(n):
+    a.append(int(input()))
+Ln=a[0]
+for number in a:
+    if number>Ln:
+        Ln=number
+a.sort(reverse=True)
+print(a)
+
+Task 1 (2)
+import statistics
+a=[]
+n=int(input())
+for i in range(n):
+    a.append(int(input()))
+x=statistics.mean(a)
+print(a.replace("0","x"))
+
+Task 2 (1)
+a=[]
+n=int(input())
+for i in range(n):
+    a.append(int(input()))
+r=min(a)
+i=a.index(r)
+print(i)
+
+Task 2 (2)
+m = [int(x) for x in input().split()]
+lst2 = []
+lst3 = []
+for i in m:
+     if i < 0:
+         lst3.append(i)
+     elif i > 0:
+         lst2.append(i)
+print(lst2)
+print(lst3)
+
+Task 3 (1)
+d = [int(x) for x in input().split()]
+Lst1=[]
+for i in d:
+     if i%2 != 0:
+         Lst1.append(i)
+print(Lst1)
+print(sum(Lst1))
+
+Task 3 (2)
+my_list = [int(x) for x in input().split()]
+a=[]
+for i in my_list:
+    if i < 15:
+        a.append(i*i)
+print(a)
+
+
+Task 4 (1)
+my_list = [int(x) for x in input().split()]
+max = my_list[0]
+for i in my_list:
+    if i > max:
+        max=i
+print(max)
+
+Task 4 (2)
+my_list = [int(x) for x in input().split()]
+lst2 =[]
+for i in my_list:
+    if i%2 !=0:
+        lst2.append(i)
+
+print(lst2)
+
+Task 5 (1)
+my_list = [int(x) for x in input().split()]
+lst2=[]
+for i in my_list:
+    if i<0:
+        lst2.append(i)
+print(lst2)
+
+Task5 (2)
+from itertools import groupby
+my_list = [int(x) for x in input().split()]
+new_x = [i for i , _ in groupby(my_list)]
+print(new_x)
+
+Task 6 (1)
+my_list = [int(x) for x in input().split()]
+max=my_list[0]
+lst2=[]
+lst3=[]
+for i in my_list:
+    if i>max:
+        max=i
+print(max)
+print(my_list)
+
+Task 6 (2)
+my_list = [int(x) for x in input().split()]
+su = 0
+for i in my_list:
+    if i>5:
+        su+=i
+print(su)
+
+Task 7 (1)
+my_list = [int(x) for x in input().split()]
+su = 0
+pro = 0
+for i in my_list:
+    if i%2==0:
+        su+=i
+        print(su)
+for i in my_list:
+            if i % 2 != 0:
+                pro = pro * i
+print(pro)
+
+
+Task 7 (2)
+my_list = [int(x) for x in input().split()]
+print(min(my_list) and max(my_list))
+
+Task 8 (1)
+my_list = [int(x) for x in input().split()]
+print(sum(my_list))
+result = 1
+for x in my_list:
+        result = result *x
+print(result)

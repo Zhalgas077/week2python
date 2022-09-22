@@ -1,0 +1,29 @@
+Task 1
+s=[1, 2, 3, 4, 5, 6]
+s.reverse()
+print(s)
+
+Task 2
+s=[1, 2]
+s[0], s[-1]=s[-1], s[0]
+print(s)
+
+Task 3
+s= [1, 2, 3, 4, 5]
+for i in s:
+    print(i, end=' ')  
+
+Task 4
+s= [100, 200, 50, 350, 80, 120]
+Ln=s[0]
+for number in s:
+    if number>Ln:
+        Ln=number
+a=len(s)
+print(Ln/a)
+
+
+Task 5
+s= [12, 5, 1, 88, 16, 112]
+s.sort(reverse=True)
+print(s)

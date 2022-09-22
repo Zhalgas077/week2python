@@ -1,0 +1,57 @@
+Tasks for independent work:
+
+Task 1
+s=input('enter a string ')
+a=0
+splits = s.split()
+print(splits)
+for split in splits:
+    if split[0] == "E" or split[0] == "e":
+        a=a+1
+        print(a)
+
+Task 2
+s=input('enter a string ')
+print(s.replace(":","%"))
+
+Task 3
+from operator import *
+s = input("Enter a string")
+print(countOf(s,"."), s.replace("."," "))
+
+Task 4
+from operator import *
+s = input("Enter a string")
+print(countOf(s,"a"), s.replace("a","o"), len(s))
+
+Task 5
+s = input("Enter a string")
+print(s.lower())
+
+Task 6
+from operator import *
+s = input("Enter a string")
+print(countOf(s,"a"), s.replace("a"," "))
+
+Task 8
+s = input ("enter a sentence")
+word_list = s.split()
+print(len(word_list))
+
+Task 9
+def word_count(s):
+   s = input ("enter a sentence")
+   count=dict()
+   words = s.split()
+   for word in words:
+    if word in count:
+        count[word]+1
+    else:
+        count[word]=1
+    return count
+print(word_count(s))
+
+Task 10
+s=input("enter a sentence")
+print(s.title())
+
